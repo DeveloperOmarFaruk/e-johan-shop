@@ -1,0 +1,11 @@
+.order-summary {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.title-order {
+    font-size: 25px;
+    font-weight: bold;
+}

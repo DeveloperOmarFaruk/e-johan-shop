@@ -1,25 +1,82 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch, Route
+} from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { GlobalStyle } from './GlobalStyle'
+import Header from './Components/Header/Header'
+import Shop from './Components/Shop/Shop'
+import Review from './Components/Review/Review'
+import Inventory from './Components/Inventory/Inventory'
+import Error from './Components/Error'
+import ProductDetails from './Components/Product/ProductDetails'
+import LogIn from './Components/LogIn/LogIn'
+import Shipment from './Components/Shipment/Shipment'
+import { createContext } from 'react'
+import PrivateRoute from './Components/PrivateRote/PrivateRoute'
 
-function App() {
+
+
+export const UserContext = createContext([])
+
+
+function App(props) {
+
+  const [loggedInUser, setLoggedInUser] = useState([])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+          <Header />
+          <GlobalStyle />
+
+
+          <Switch>
+            <Route path='/shop' exact>
+              <Shop />
+            </Route>
+
+            <Route path='/review' exact>
+              <Review />
+            </Route>
+
+
+            <PrivateRoute path='/manage' exact>
+              <Inventory />
+            </PrivateRoute>
+
+
+            <Route path='/login' exact>
+              <LogIn />
+            </Route>
+
+
+            <PrivateRoute path='/shipment' exact>
+              <Shipment />
+            </PrivateRoute>
+
+            <Route path='/' exact>
+              <Shop />
+            </Route>
+
+            <Route path='/product/:key' exact>
+              <ProductDetails />
+            </Route>
+
+
+            <Route path='*' exact>
+              <Error />
+            </Route>
+
+          </Switch>
+        </UserContext.Provider>
+      </Router>
+    </>
   );
 }
-
 export default App;
+
+
+
+
