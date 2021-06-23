@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/e-johan-shop/static/css/main.278402bb.chunk.css",
+    "main.js": "/e-johan-shop/static/js/main.d5aaa868.chunk.js",
+    "main.js.map": "/e-johan-shop/static/js/main.d5aaa868.chunk.js.map",
+    "runtime-main.js": "/e-johan-shop/static/js/runtime-main.ae7b9c22.js",
+    "runtime-main.js.map": "/e-johan-shop/static/js/runtime-main.ae7b9c22.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/e-johan-shop/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.f8d38c15.chunk.js": "/e-johan-shop/static/js/2.f8d38c15.chunk.js",
+    "static/js/2.f8d38c15.chunk.js.map": "/e-johan-shop/static/js/2.f8d38c15.chunk.js.map",
+    "index.html": "/e-johan-shop/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/e-johan-shop/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.278402bb.chunk.css.map": "/e-johan-shop/static/css/main.278402bb.chunk.css.map",
+    "static/js/2.f8d38c15.chunk.js.LICENSE.txt": "/e-johan-shop/static/js/2.f8d38c15.chunk.js.LICENSE.txt",
+    "static/media/logo.0dd9a510.png": "/e-johan-shop/static/media/logo.0dd9a510.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae7b9c22.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.f8d38c15.chunk.js",
+    "static/css/main.278402bb.chunk.css",
+    "static/js/main.d5aaa868.chunk.js"
+  ]
+}
