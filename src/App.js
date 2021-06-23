@@ -56,7 +56,7 @@ function App(props) {
               <Shipment />
             </PrivateRoute>
 
-            <Route path='/' exact>
+            <Route path='/shop' exact>
               <Shop />
             </Route>
 
